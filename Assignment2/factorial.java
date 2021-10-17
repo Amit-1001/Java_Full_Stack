@@ -1,6 +1,6 @@
-package Assignment2;
 
-import java.util.Scanner;
+
+iimport java.util.Scanner;
 
 public class factorial {
     public static void main(String[] args) {
