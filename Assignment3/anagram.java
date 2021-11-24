@@ -34,17 +34,17 @@ public class anagram {
         Arrays.fill(string2,0);
 
         for (int i=0;i<st1.length();i++){
-            string1[st1.charAt(i)]++;
+            string1[st1.charAt(i)]++; // counting appearance of each character present in string st1
         }
 
 
         for (int i=0;i<st2.length();i++){
-            string2[st2.charAt(i)]++;
+            string2[st2.charAt(i)]++; // counting appearance of each character present in string st2
         }
 
 
         for (int i=0; i<256;i++){
-            if(string1[i]!=string2[i]){
+            if(string1[i]!=string2[i]){ // if appearance of character present in string st1 and string st2 is not equal then it means string is not anagram
                 return false;
             }
         }

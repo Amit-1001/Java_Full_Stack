@@ -12,7 +12,7 @@ public class addTwoMatrix {
 
         for (int i =0; i<mat1.length;i++){
             for(int j =0; j<mat2[0].length;j++){
-                ans[i][j] = mat1[i][j] + mat2[i][j];
+                ans[i][j] = mat1[i][j] + mat2[i][j]; // adding two matrix
             }
         }
 
