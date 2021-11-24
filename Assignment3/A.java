@@ -16,11 +16,11 @@ public class A extends Student{
     @Override
     void getPercentage() {
         System.out.println("Percentage:"+((sub1+sub2+sub3)*100)/300);
-    }
+    } // this is function which is present in abstract class 'Student'
 
 
     public static void main(String[] args) {
         A obj = new A(89,59,89);
-        obj.getPercentage();
+        obj.getPercentage(); // accessing abstract function of abstract class 'Student'
     }
 }

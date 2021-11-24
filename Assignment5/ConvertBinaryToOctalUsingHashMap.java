@@ -8,6 +8,7 @@ public class ConvertBinaryToOctalUsingHashMap {
     public static void main(String[] args) {
         Map<Integer,Integer> number = new HashMap<>();
 
+        //
         number.put(0,0);
         number.put(1,1);
         number.put(2,10);

@@ -25,6 +25,7 @@ public class matrixTranspose {
 
     private static void transpose(int[][] matrix) {
 
+        // changing rows in columns and columns in row
         for(int i=0; i< matrix.length;i++){
             for (int j =i+1;j<matrix[i].length;j++){
                 int temp = matrix[i][j];
