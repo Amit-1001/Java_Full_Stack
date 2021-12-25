@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <context:property-placeholder location="classpath:Teams.properties"/> <!--this is required to access properties file-->
+
+    <bean id="address" class="Address.Address"/> <!--Address will be dependency injection for employee-->
+    <bean id="project" class="Project.Project"/>
+    <bean id="team" class="Team.Team">
+        <constructor-arg ref="project"/>
+
+        <property name="TeamName" value="${teamName}"/>
+        <property name="TeamMember" value="${teamMember}"/>
+
+
+    </bean>
+
+    <bean id="employee" class="User.user">
+        <constructor-arg ref="address"/>
+
+        <property name="teamInfo" ref="team"/>
+
+    </bean>
+
+
+
+
+
+
+</beans>
