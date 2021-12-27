@@ -3,6 +3,7 @@ package Team;
 import Project.Project;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Team implements teamData{
     private String TeamName;
@@ -37,14 +38,16 @@ public class Team implements teamData{
     }
 
     @Override
-    public void setProject() {
-
+    public void setProject(List<String> lists) {
+            projectList.setProjects(lists);
     }
 
     @Override
     public void showProjects() {
-
+        System.out.println(projectList.getProjects());
     }
+
+
 
 
 }

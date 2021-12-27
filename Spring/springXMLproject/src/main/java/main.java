@@ -22,7 +22,8 @@ public class main {
         employee.setPinCode("1231283");
         employee.setCity("Wakanda");
         employee.setState("Avenger");
-        employee.setProject(project.toString());
+        employee.setList(project);
+
 
         employee.displayInformation();
 
