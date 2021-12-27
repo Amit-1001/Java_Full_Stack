@@ -3,6 +3,9 @@ package User;
 import Address.Address;
 import Team.Team;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class user implements userData{
 
     Address address;
@@ -10,6 +13,12 @@ public class user implements userData{
     // teamInfo is assigned using setter injection
     Team teamInfo; // generate setter
 
+    List<String> list = new ArrayList<>();
+
+
+    public void setList(List<String> list) { // Assigning value to Project list of tema
+        teamInfo.setProject(list);
+    }
 
     public user(Address address){
         this.address = address;
@@ -44,7 +53,8 @@ public class user implements userData{
         System.out.println("--------------------------------");
         System.out.println("Team Name:"+teamInfo.teamName());
         System.out.println("Team Members:"+teamInfo.teamMember());
-        //teamInfo.showProjects();
+        System.out.println("Team project:");
+        teamInfo.showProjects();
     }
 
     public void setAddressLine1(String addressLine1) {
@@ -67,9 +77,6 @@ public class user implements userData{
         address.PinCode(pinCode);
     }
 
-    public void setProject(String list){
-
-    }
 
 
 
