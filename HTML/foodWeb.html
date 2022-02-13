@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Food web
+    </title>
+    <style>
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f5587b;
+        }
+        
+        header li {
+            float: left;
+        }
+        
+        header li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        header li a:hover {
+            background-color: #111;
+        }
+        
+        .text-content a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .images {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .labels {
+            margin-left: 240px;
+            margin-bottom: 40px;
+        }
+        
+        .fooditem {
+            width: 500px;
+            height: 500px;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        /* Dropdown button */
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: black;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        body {
+            background-color: #fcefee;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Food List
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="#biryani">pizza</a>
+                        <a href="#cake">frech fries</a>
+                        <a href="#pizza">Burger</a>
+
+                        <a href="#wings">Wings</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <br>
+
+        <div class="images">
+            <div id="pizza"><img src="/img/pizza.jpg" class="fooditem"></div>
+            <p class="labels">Pizza</p>
+            <div id="fries"><img src="/img/fries.jpg" class="fooditem" /></div>
+            <p class="labels">French fries</p>
+            <div id="burger"><img src="/img/burger.jpg" class="fooditem" /></div>
+            <p class="labels">Burger</p>
+            <div id="wings"><img src="/img/wings.jpg" class="fooditem" /></div>
+            <p class="labels">Chicken wings</p>
+
+        </div>
+
+</body>
+
+</html>
