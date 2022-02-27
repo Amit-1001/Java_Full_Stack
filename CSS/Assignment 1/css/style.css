@@ -1,0 +1,137 @@
+    /* header*/
+    
+    #account-btn {
+        justify-content: space-between;
+    }
+    
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    #Account {
+        background-color: #FFD8DB;
+        color: #A389CC;
+        border-radius: 20px;
+        padding: 20px;
+        border: none;
+        margin-top: 10px;
+        bottom: 10px;
+    }
+    
+    #Account:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    ul a {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        opacity: 0.5;
+    }
+    
+    a:hover {
+        text-decoration: underline navy;
+        color: black;
+        font-weight: bold;
+        opacity: 1;
+    }
+    
+    #logo {
+        width: 150px;
+        padding: 10px;
+    }
+    /* body section*/
+    
+    body {
+        margin: 0;
+        font-family: Arial;
+        background-color: #ffffff;
+    }
+    
+    h1 {
+        font-family: Arial;
+        font-size: 4pc;
+        word-spacing: 10pc;
+    }
+    
+    p {
+        opacity: 0.5;
+        color: black;
+    }
+    
+    #main-section {
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    
+    #content {
+        height: 100vh;
+        text-align: left;
+        box-sizing: border-box;
+        padding: 0 0 20px;
+    }
+    
+    footer {
+        background-color: saddlebrown;
+        align-self: center;
+    }
+    
+    #landing-image {
+        box-sizing: border-box;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    img {
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    #newAccount {
+        background-color: #5243C0;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 15px;
+        border: none;
+        width: 150px;
+        margin: 5px;
+    }
+    
+    #newAccount:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #checkbox {
+        padding: 50px;
+    }
+    
+    ol li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    
+    ol li img {
+        background-image: url(/img/tick-gray.png) no-repeat;
+    }
+    
+    ol li img:hover {
+        background: url("/img/tick-blue.png") no-repeat;
+    }
+    
+    ol li:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
